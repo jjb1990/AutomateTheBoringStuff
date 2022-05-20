@@ -1,0 +1,27 @@
+#collats function
+def collatz(number):
+    if number  % 2 == 0:
+        print(str(number)+ " // 2")
+        total = number // 2
+        print(total)
+        return number // 2
+        
+    elif number % 2 == 1:
+        print('3 * ' + str(number) + ' +1')
+        total = 3 * number + 1
+        print(total)
+        return (3 * number + 1)
+
+#loop control, while true the collatz sequence is not complete
+game = True
+while game:
+    
+    try:    
+        print('Enter number:')
+        number = input()
+        if int(number) == 1:
+            game = False
+        else:
+            collatz(int(number))
+    except ValueError:
+        print('No a valid number')
