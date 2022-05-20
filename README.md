@@ -1,2 +1,2 @@
-# AutomateTheBoringStuff
-Code for projects in the book.
+# AutomateTheBoringStuff Book Projects
+A collection of code I write for each project.
